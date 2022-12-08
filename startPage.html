@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skydiving</title>
+    <link rel="stylesheet" href="startPage.css">
+</head>
+<body>
+<header>
+    <a href="#" class="logo">The ultimate<br>Skydiving guide</a>
+    <ul>
+        <li><a href="#" class="active"> Home</a></li>
+        <li><a href="#"> About</a></li>
+        <li><a href="#"> Contact</a></li>
+    </ul>
+</header>
+<section>
+    <img src="images/clouds.png" id="clouds">
+    <img src="images/skyDiver.png" id="skyDiver">
+    <h1 class="title">let's fly together</h1>
+    <img src="images/mountsins.png" id="mountains">
+    <img src="images/sun2.png" id="sun">
+    <a href="#sec" class="btn">Explore </a>
+</section>
+<div class="sec" id="sec">
+    <h2>Skydiving Information</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et nisi excepturi sapiente tempora. Molestiae dolor necessitatibus quae velit iure minus facere laboriosam sint? Laborum officia ullam natus repellendus dolor tempore id. Unde adipisci consectetur, blanditiis sunt officia voluptas provident voluptatum quaerat? Ipsam fuga officia eaque deleniti doloremque nisi aliquid? Ea repellat incidunt iste commodi officia autem? Hic maxime deserunt cum at dignissimos ipsa quaerat rerum asperiores. Laudantium amet eius eligendi quis iusto, debitis mollitia aperiam sed laborum quo similique nobis sint veritatis ratione totam, libero iste. Obcaecati eaque in tenetur soluta necessitatibus vitae nulla fugit exercitationem neque, recusandae sequi minus alias deserunt praesentium omnis accusantium eos enim modi! Nesciunt impedit, libero ullam voluptatum consectetur pariatur non saepe quasi. Dolores porro omnis vero maiores ullam aspernatur, possimus facere corrupti, repudiandae deserunt quo! Doloremque repellendus molestias numquam facilis voluptatum dignissimos, unde porro voluptatem ex nulla expedita, ipsam quae laboriosam illo ut possimus soluta eaque necessitatibus? Earum quisquam aliquam alias sint recusandae, soluta ipsam? Sunt libero vero aspernatur eius itaque laboriosam impedit reiciendis, illum saepe, voluptatibus, quibusdam delectus quaerat animi debitis. Iure odio corporis quae aspernatur maiores quis fuga consequuntur repudiandae. Harum laudantium omnis perferendis? Libero non impedit ullam eaque error nesciunt quisquam placeat accusantium rem enim, adipisci quo id animi maiores debitis labore exercitationem rerum quidem natus totam numquam. Aliquam nesciunt quas voluptatem exercitationem ut soluta vel distinctio placeat omnis error molestias fuga nostrum facere, harum nemo doloribus tenetur eum ipsam. Perspiciatis culpa ullam velit reiciendis totam aut fuga quo recusandae. Similique consectetur eius autem perspiciatis harum quaerat tenetur earum ab dolor ex incidunt provident quisquam, aliquam minus dignissimos pariatur quae obcaecati adipisci sunt. Cumque voluptates molestias debitis sed vero aut alias doloremque dolore laborum possimus nisi non nulla, sapiente fuga sequi iusto. Labore tempore architecto numquam, consequatur, fugit, ipsam voluptatum dolores eos consequuntur eveniet laudantium itaque? Ipsam accusamus cumque molestias dolores, nesciunt delectus perferendis quasi sint voluptatibus culpa possimus accusantium praesentium, officia, aliquam nam recusandae voluptate ipsum. Dolore in, exercitationem at consectetur debitis eum ipsum delectus, facere magnam eius non iste quos natus nihil libero, illo vel quidem provident harum! Eveniet nisi corporis ut. Consectetur placeat nesciunt non, adipisci quo, laboriosam accusamus ducimus voluptates voluptatibus hic, eligendi sed minus ut. Quasi commodi aspernatur fugit exercitationem sit inventore quae tempore in sed vitae. Sed excepturi, voluptatibus, sequi qui voluptate magni provident, eum doloribus quo quam impedit at error illum nam officia doloremque!</p>
+</div>
+<script>
+ let clouds = document.getElementById('clouds');
+ let skyDiver = document.getElementById('skyDiver');
+ let mountains = document.getElementById('mountains');
+ let title = document.getElementById('title');
+ let btn = document.getElementById('btn');
+ let sun = document.getElementById('sun');
+ let section = document.getElementById('section');
+
+ window.addEventListener('scroll',function(){
+    let value = window.scrollY;
+    while(value < 420){
+        clouds.style.left = value*0.25+'px';
+        skyDiver.style.top =  value+'px';
+        title.style.left =  value*6+'px';  
+    }
+
+ })
+
+
+</script>
+</body>
+</html>
